@@ -1,6 +1,7 @@
-import './App.css'
-import ItemListContainer from './ItemListContainer'
+
+import ItemListContainer from './ItemListContainer.jsx'
 import NavBar from './NavBar'
+import Hero from './Hero.jsx'
 
 
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer mensaje={"Proximamente..."} />
+      <Hero/>
+      <ItemListContainer />
     </>
   )
 }

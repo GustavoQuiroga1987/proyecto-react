@@ -1,9 +1,11 @@
-const ItemListContainer=({mensaje})=>{
+import ItemList from "./ItemList"
+
+const ItemListContainer=({Item})=>{
     return(
         <div className="container">
             <div className="row">
-                <div className="col">
-                    <h2 style={{color:"black",fontWeight:"bold"}}>{mensaje}</h2>
+                <div className="col ">
+                    <ItemList/>
                 </div>
             </div>
         </div>
