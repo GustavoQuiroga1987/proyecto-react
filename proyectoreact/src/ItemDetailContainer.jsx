@@ -1,31 +1,27 @@
-import { useEffect,useState } from "react";
-import ItemList from "./ItemList"
+import { useState , useEffect} from "react";
 import {useParams} from "react-router-dom";
+import ItemDetail from "./ItemDetail";
 
 
-
-
-
-
-const ItemListContainer=()=>{
-        const[items ,setitems]=useState([]);
-        const{id}=useParams();
+const ItemDetailContainer=()=>{
+        const [item ,setitem]=useState([]);
+        const {id}=useParams();
     
         useState(()=>{
             fetch("https://api.mercadolibre.com/sites/MLA/search?q=celulares&limit=15#json")
             .then(respuesta =>respuesta.json())
             .then(resultado =>{
-                setitems(id ? resultado.results.filter(item=>item.attributes.values.name==id):resultado.results);
+                const producto = resultado.results.find(item=>item.id==id);
+                setitem(producto);
             })
         },[id])
-
 
 
 
     return(
         <div className="container">
             <div className="row my-5"> 
-                    <ItemList items={items}/>
+                    <ItemDetail item={item}/>
                     
             </div>
         </div>
@@ -33,4 +29,4 @@ const ItemListContainer=()=>{
 }
 
 
-export default ItemListContainer
+export default ItemDetailContainer

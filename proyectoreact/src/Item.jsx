@@ -1,21 +1,20 @@
-const item=({props})=>{
+import { Link } from "react-router-dom"
+import ItemCount from "./ItemCount"
+
+const Item=({item})=>{
         return(
-                <div className="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                    <div className="col-md-4">
-            
-                    </div>
-                    <div className="col-md-8">
-                    <div className="card-body">
-                
-               <h5 className="card-title">Card title</h5>
-                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
+            <div className="col-md-4 text-center">
+                <Link to={"/item/" + item.id}>
+            <div className="card border-0" style={{width:"15rem"}}>
+            <img src={item.thumbnail} className="img-fluid" alt={item.title}/>
+            <div class="card-body">
+                <p className="card-text text-uppercase">{item.title}</p>
+                <p className="card-text"><b>${item.price}</b></p>
             </div>
-            </div>
-        </div>
-        </div>
+          </div>
+          </Link>
+          </div>
         )
     }
 
-export default item
+export default Item

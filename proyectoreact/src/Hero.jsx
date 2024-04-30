@@ -8,7 +8,7 @@ const Hero=()=>{
     <div className="carousel-item active">
       <img src={iphone} className="d-flex w-10 " alt="iphone"/>
     </div>
-    <div class="carousel-item">
+    <div className="carousel-item">
       <img src={samsung} className="d-block w-100 " alt="samsung"/>
     </div>
   </div>
