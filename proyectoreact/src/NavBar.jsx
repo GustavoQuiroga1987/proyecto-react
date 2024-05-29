@@ -18,7 +18,7 @@ const NavBar=()=>{
                 <NavLink className="nav-link fw-semibold text-white"to={"/category/Motorola"}>Motorola</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link fw-semibold text-white" to={"/category/Xiaome"}>Xiaome</NavLink>
+                <NavLink className="nav-link fw-semibold text-white" to={"/category/Xiaomi"}>Xiaomi</NavLink>
               </li>
             </ul>
           </div>

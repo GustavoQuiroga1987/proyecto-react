@@ -1,28 +1,50 @@
 import { useState , useEffect} from "react";
 import {useParams} from "react-router-dom";
+import arrayProductos from "./productos.json"
+import Loading from "./Loading";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
 import ItemDetail from "./ItemDetail";
 
 
 const ItemDetailContainer=()=>{
-        const [item ,setitem]=useState([]);
+        const [item ,setItem]=useState([]);
+        const [visible, setVisible] = useState(true);
         const {id}=useParams();
     
-        useState(()=>{
-            fetch("https://api.mercadolibre.com/sites/MLA/search?q=celulares&limit=15#json")
-            .then(respuesta =>respuesta.json())
-            .then(resultado =>{
-                const producto = resultado.results.find(item=>item.id==id);
-                setitem(producto);
+
+    //acceso via json    
+     /* useEffect(() => {
+            const promesa = new Promise(resolve => {
+                setTimeout(() => {
+                    const producto = arrayProductos.find(item => item.id === parseInt(id));
+                    resolve(producto);
+                }, 2000)
+            });
+            
+            promesa.then(respuesta => {
+                setItem(respuesta);
             })
-        },[id])
+        }, [id])*/
+    
+    //acceso via firebase
+
+   useEffect(() => {
+        const db = getFirestore();
+        const docRef = doc(db, "items", id);
+        getDoc(docRef).then(snapShot => {
+            if (snapShot.exists()) {
+                setItem({id:snapShot.id, ...snapShot.data()});
+                setVisible(false);
+            }
+        });
+    }, [id]);
 
 
 
     return(
         <div className="container">
             <div className="row my-5"> 
-                    <ItemDetail item={item}/>
-                    
+            {visible ? <Loading /> : <ItemDetail item={item} />}     
             </div>
         </div>
     )

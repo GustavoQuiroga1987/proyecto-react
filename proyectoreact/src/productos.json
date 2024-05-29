@@ -1,0 +1,23 @@
+[
+    {"id":1, "nombre":"Xiaomi Redmi Note 11 4gb Ram 128gb Rom Color Gris grafito", "descripcion":"Memoria interna de 128GB , Tiene 4 cámaras traseras de 50Mpx/8Mpx/2Mpx/2Mpx", "precio":361899, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_754779-MLU75357949991_032024-F.webp", "stock":9, "categoria":"Xiaomi"},
+    
+    {"id":2, "nombre":"Samsung Galaxy A34 128GB Awesome Graphite 6GB RAM", "descripcion":"Memoria interna de 128GB , Pantalla de 6.6", "precio":612799, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_680639-MLA54691106460_032023-F.webp", "stock":5, "categoria":"Samsung"},
+    
+    {"id":3, "nombre":"Samsung Galaxy A54 5G 128 GB Awesome graphite 6 GB RAM", "descripcion":"Memoria interna de 128GB,Cámara delantera de 32Mpx,Resistente al agua.", "precio":994999, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_732057-MLA70868353813_082023-F.webp", "stock":7, "categoria":"Samsung"},
+
+    {"id":4, "nombre":"Moto G54 5G 128 GB verde 8 GB RAM", "descripcion":"Procesador MediaTek Dimensity 7020 Octa-Core de 2.2GHz con 8GB de RAM,Batería de 5000mAh.", "precio":459679, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_947190-MLA73734741684_012024-F.webp", "stock":5, "categoria":"Motorola"},
+
+    {"id":5, "nombre":"Xiaomi Redmi 9a 2gb/32gb Azul", "descripcion":"Procesador MediaTek MT6762G Helio G25 Octa-Core de 2GHz con 2GB de RAM,Memoria interna de 32GB.", "precio":159899, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_746902-MLA48765111950_012022-F.webp", "stock":5, "categoria":"Xiaomi"},
+
+    {"id":6, "nombre":"Samsung Galaxy S23 256 GB Phantom black 8 GB", "descripcion":"Cuenta con una pantalla Dynamic AMOLED 2X de 6.1 pulgadas Full HD+,Triple cámara trasera de 50MP, 10MP y 12MP con funciones como autoenfoque y modo retrato.", "precio":1744999, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_889742-MLU74941619474_032024-F.webp", "stock":10, "categoria":"Samsung"},
+
+    {"id":7, "nombre":"Motorola Moto G84 5G 256 GB Negro espacial 8 GB RAM", "descripcion":"Procesador Snapdragon 695 Octa-Core de 2.2GHz con 8GB de RAM ,Memoria interna de 256GB.", "precio":589799, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_638599-MLU73047698782_112023-F.webp", "stock":4, "categoria":"Motorola"},
+
+    {"id":8, "nombre":"Moto G54 5G 128 GB verde 8 GB RAM", "descripcion":"Memoria interna de 128GB , Procesador MediaTek Dimensity 7020 Octa-Core de 2.2GHz con 8GB de RAM.", "precio":459679, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_947190-MLA73734741684_012024-F.webp", "stock":6, "categoria":"Motorola"},
+
+    {"id":9, "nombre":"Xiaomi Redmi 10c Dual Sim 128gb 4gb Ram Gris grafito", "descripcion":"Pantalla HD+ Dot Drop de 6.71 para disfrutar contenidos con nitidez, Cámara trasera dual 50 Mpx y frontal 5 Mpx para fotos y videos de calidad.", "precio":206699, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_690265-MLA49949612039_052022-F.webp", "stock":10, "categoria":"Xiaomi"},
+    
+    {"id":10, "nombre":"Xiaomi Redmi 13C Dual SIM 128 GB midnight black 4 GB RAM", "descripcion":"Procesador MediaTek Helio G85 Octa-Core de 2.2GHz con 4GB de RAM.", "precio":299999, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_780144-MLA72668121499_112023-F.webp", "stock":10, "categoria":"Xiaomi"},
+
+    {"id":11, "nombre":"Motorola Moto G23 128 GB Azul cielo 4 GB RAM", "descripcion":"Procesador Mediatek MT6769Z Helio G85 Octa-Core de 2GHz con 4GB de RAM.", "precio":349999, "imagen":"https://http2.mlstatic.com/D_NQ_NP_2X_648883-MLU74182500303_012024-F.webp", "stock":6, "categoria":"Motorola"}
+]
