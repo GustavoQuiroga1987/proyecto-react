@@ -13,7 +13,7 @@ const ItemDetailContainer=()=>{
     
 
     //acceso via json    
-     /* useEffect(() => {
+      useEffect(() => {
             const promesa = new Promise(resolve => {
                 setTimeout(() => {
                     const producto = arrayProductos.find(item => item.id === parseInt(id));
@@ -24,11 +24,11 @@ const ItemDetailContainer=()=>{
             promesa.then(respuesta => {
                 setItem(respuesta);
             })
-        }, [id])*/
+        }, [id])
     
     //acceso via firebase
 
-   useEffect(() => {
+   /*useEffect(() => {
         const db = getFirestore();
         const docRef = doc(db, "items", id);
         getDoc(docRef).then(snapShot => {
@@ -37,14 +37,14 @@ const ItemDetailContainer=()=>{
                 setVisible(false);
             }
         });
-    }, [id]);
+    }, [id]);*/
 
 
 
     return(
         <div className="container">
             <div className="row my-5"> 
-            {visible ? <Loading /> : <ItemDetail item={item} />}     
+            <ItemDetail item={item} />    
             </div>
         </div>
     )

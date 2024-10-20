@@ -7,7 +7,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
+/*const firebaseConfig = {
     apiKey: "AIzaSyCsqCvipf79vyudSRiC2HsmjShp_NOBzGs",
     authDomain: "primer-proyecto-react-3f811.firebaseapp.com",
     projectId: "primer-proyecto-react-3f811",
@@ -17,7 +17,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);*/
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />)

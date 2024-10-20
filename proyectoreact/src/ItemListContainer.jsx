@@ -16,7 +16,7 @@ const ItemListContainer=()=>{
         const{id}=useParams();
     
      //acceso via json   
-        /*useEffect(() => {
+        useEffect(() => {
                 const promesa = new Promise(resolve => {
                     setTimeout(() => {
                         resolve(id ? arrayProductos.filter(item => item.categoria == id) : arrayProductos);
@@ -26,11 +26,11 @@ const ItemListContainer=()=>{
                 promesa.then(respuesta => {
                     setItems(respuesta);
                 })
-            }, [id])*/
+            }, [id])
 
     //acceso via firebase   
 
-    useEffect(() => {
+   /* useEffect(() => {
         const db = getFirestore();
         const itemsCollection = collection(db, "items");
         const queryCollection = id ? query(itemsCollection, where("categoria", "==", id)) : itemsCollection;
@@ -40,14 +40,14 @@ const ItemListContainer=()=>{
                 setVisible(false);
             }
         });
-    }, [id]);
+    }, [id]);*/
 
 
 
     return(
         <div className="container">
             <div className="row my-5"> 
-            {visible ? <Loading /> : <ItemList items={items} />}
+            <ItemList items={items} />
                     
             </div>
         </div>
